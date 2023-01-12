@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb+srv://PranavMare:9175568768PR%40a@cluster0.o725cz8.mongodb.net/todolistDB", {UseNewUrlParser: true});
+mongoose.connect("You cannot steel it", {UseNewUrlParser: true});
 
 const itemsSchema = {
   name: String
