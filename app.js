@@ -5,10 +5,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
 
-
-
 const app = express();
-
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -20,7 +17,6 @@ mongoose.connect("mongodb+srv://UserName:password@cluster0.o725cz8.mongodb.net/t
 const itemsSchema = {
   name: String
 };
-
 
 const Item = mongoose.model("item",itemsSchema);
 
@@ -119,10 +115,6 @@ app.post("/delete", function(req, res){
         }
       }); 
     }
-
-    
-    
-
 });
 
 
