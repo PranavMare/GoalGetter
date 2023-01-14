@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb+srv://Username:password@cluster0.o725cz8.mongodb.net/todolistDB", {UseNewUrlParser: true});
+mongoose.connect("mongodb+srv://UserName:password@cluster0.o725cz8.mongodb.net/todolistDB", {UseNewUrlParser: true});
 
 const itemsSchema = {
   name: String
@@ -136,7 +136,7 @@ app.get("/about", function(req, res){
 
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 8000;
+  port = 3000;
 }
 
 app.listen(port, function() {
